@@ -73,6 +73,12 @@
 	
 	<dependencies>
 	
+	<dependency>
+	<groupId>io.github.cbrinkrolf</groupId>
+	<artifactId>test-core</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	
 	<!-- for testing -->
 		<dependency>
     		<groupId>org.junit.jupiter</groupId>
