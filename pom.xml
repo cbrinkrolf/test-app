@@ -9,9 +9,24 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	<repositories>
+    	<repository>
+        	<id>github</id>
+        	<url>https://maven.pkg.github.com/cbrinkrolf/test-core/</url>
+    	</repository>
+	</repositories>
+	
+	<distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/cbrinkrolf/test-core</url>
+        </repository>
+    </distributionManagement>
 
 	<build>
-		<finalName>test-app-v.${project.version}</finalName>
+		<finalName>test-app-v${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -76,7 +91,7 @@
 	<dependency>
 	<groupId>io.github.cbrinkrolf</groupId>
 	<artifactId>test-core</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	</dependency>
 	
 	<!-- for testing -->
