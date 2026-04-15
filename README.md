@@ -1,3 +1,5 @@
+![Java CI](https://github.com/cbrinkrolf/test-app/actions/workflows/maven-build.yml/badge.svg?branch=main)
+
 This test application demonstrates how GitHub packages can be included as a dependency using Maven. Thus, this project depends on the [test-core](https://github.com/cbrinkrolf/test-core) Maven Arftifact, shown under *Packages* on the test-core GitHub page.
 
 Maven Artifacts hosted on GitHub can only be accessed by authorized users. There are a few ways to build this project locally:
